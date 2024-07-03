@@ -4,4 +4,12 @@
 @import "vendor/normalize";
 
 // Global
+@import "mixins";
+@import "variables";
 @import "global/fonts";
+@import "global/container";
+
+// Blocks
+@import "blocks/title";
+@import "blocks/main-header";
+@import "blocks/main-nav";
