@@ -1,0 +1,126 @@
+.discounts-card {
+  color: $color-main-light2;
+  border: 7px solid transparent;
+  border-image: linear-gradient(97deg, rgba(237, 2, 51, 1) 17.6%, rgba(0, 62, 183, 1) 95.31%);
+  border-image-slice: 1;
+}
+
+.discounts-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  height: 100%;
+  padding: 22px 28px 27px;
+}
+
+.discounts-card--picture {
+  position: relative;
+  display: grid;
+  grid-row: auto / span 2;
+  grid-template-columns: repeat(2, 1fr);
+  color: $color-default-white;
+  background-color: $color-main-contrast;
+  border: none;
+
+  .discounts-card__content {
+    gap: 15px;
+    padding: 40px 45px 44px;
+  }
+
+  .discounts-card__description {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .discounts-card__button {
+    color: $color-default-white;
+
+  }
+}
+
+.discounts-card__image {
+  background-color: $color-main-contrast;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.discounts-card__title {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.discounts-card__price {
+  margin: 0 0 10px;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.discounts-card__description {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+}
+
+.discounts-card__button {
+  position: relative;
+  display: block;
+  width: fit-content;
+  margin-top: auto;
+  padding: 7px 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  color: $color-main-light2;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  user-select: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    border: 1px solid transparent;
+    border-bottom-color: currentColor;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus,
+  &:focus-visible {
+    opacity: 1;
+    outline: none;
+
+    &::before {
+      top: -5px;
+      right: -10px;
+      bottom: -5px;
+      left: -10px;
+      border-color: currentColor;
+    }
+  }
+
+  &:active {
+    &::before {
+      inset: 0;
+      border-color: transparent;
+      border-bottom-color: currentColor;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
