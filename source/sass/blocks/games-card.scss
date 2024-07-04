@@ -1,0 +1,32 @@
+.games-card {
+  & + & {
+    margin-top: 15px;
+  }
+}
+
+.games-card__title {
+  margin: 0 0 6px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.games-card__number {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  width: fit-content;
+  padding-top: 5px;
+  font-size: 39px;
+  font-weight: 700;
+  line-height: 40px;
+  border-top: 1px solid $color-default-white;
+}
+
+.games-card__date {
+  width: 45px;
+  padding: 3px 0 0 7px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
