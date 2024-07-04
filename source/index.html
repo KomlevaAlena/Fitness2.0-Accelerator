@@ -82,6 +82,112 @@
           </div>
 
         </section>
+        <section class="subscription" id="subscription" data-tabs="parent" data-test="price">
+          <div class="subscription__container container">
+            <h2 class="subscription__title title">Абонементы</h2>
+            <ul class="subscription__list filter-list" data-tabs="controls">
+              <li class="filter-list__item">
+                <!-- Это кнопки, а не ссылки, перехода на другую страницу при не работающем js не будет -->
+                <button class="filter-list__link is-active" type="button" data-tabs="control">1 месяц</button>
+              </li>
+              <li class="filter-list__item">
+                <button class="filter-list__link" type="button" data-tabs="control">6 месяцев</button>
+              </li>
+              <li class="filter-list__item">
+                <button class="filter-list__link" type="button" data-tabs="control">12 месяцев</button>
+              </li>
+            </ul>
+            <div class="subscription__wrapper" data-tabs="content">
+              <ul class="card-list" data-tabs="element">
+                <li class="card-list__item card">
+                  <h3 class="card__title">С тренером</h3>
+                  <p class="card__description">12 занятий</p>
+                  <div class="card__price-wrapper">
+                    <span class="card__price">5000 <span>₽</span></span>
+                    <span class="card__shadow">5000</span>
+                  </div>
+                  <a class="card__button button button--dark" href="#">Купить абонемент</a>
+                </li>
+                <li class="card-list__item card">
+                  <h3 class="card__title">Дневной</h3>
+                  <p class="card__description">с 8:00 до 17:00 </p>
+                  <div class="card__price-wrapper">
+                    <span class="card__price">1700 <span>₽</span></span>
+                    <span class="card__shadow">1700</span>
+                  </div>
+                  <a class="card__button button button--dark" href="#">Купить абонемент</a>
+                </li>
+                <li class="card-list__item card">
+                  <h3 class="card__title">Полный день</h3>
+                  <p class="card__description">с 8:00 до 22:00 </p>
+                  <div class="card__price-wrapper">
+                    <span class="card__price">2700 <span>₽</span></span>
+                    <span class="card__shadow">2700</span>
+                  </div>
+                  <a class="card__button button button--dark" href="#">Купить абонемент</a>
+                </li>
+              </ul>
+              <ul class="card-list" data-tabs="element">
+                <li class="card-list__item card">
+                  <h3 class="card__title">С тренером</h3>
+                  <p class="card__description">72 занятия</p>
+                  <div class="card__price-wrapper">
+                    <span class="card__price">30000 <span>₽</span></span>
+                    <span class="card__shadow">30000</span>
+                  </div>
+                  <a class="card__button button button--dark" href="#">Купить абонемент</a>
+                </li>
+                <li class="card-list__item card">
+                  <h3 class="card__title">Дневной</h3>
+                  <p class="card__description">с 8:00 до 17:00 </p>
+                  <div class="card__price-wrapper">
+                    <span class="card__price">10200 <span>₽</span></span>
+                    <span class="card__shadow">10200</span>
+                  </div>
+                  <a class="card__button button button--dark" href="#">Купить абонемент</a>
+                </li>
+                <li class="card-list__item card">
+                  <h3 class="card__title">Полный день</h3>
+                  <p class="card__description">с 8:00 до 22:00 </p>
+                  <div class="card__price-wrapper">
+                    <span class="card__price">16200 <span>₽</span></span>
+                    <span class="card__shadow">16200</span>
+                  </div>
+                  <a class="card__button button button--dark" href="#">Купить абонемент</a>
+                </li>
+              </ul>
+              <ul class="card-list" data-tabs="element">
+                <li class="card-list__item card">
+                  <h3 class="card__title">С тренером</h3>
+                  <p class="card__description">144 занятия</p>
+                  <div class="card__price-wrapper">
+                    <span class="card__price">60000 <span>₽</span></span>
+                    <span class="card__shadow">60000</span>
+                  </div>
+                  <a class="card__button button button--dark" href="#">Купить абонемент</a>
+                </li>
+                <li class="card-list__item card">
+                  <h3 class="card__title">Дневной</h3>
+                  <p class="card__description">с 8:00 до 17:00 </p>
+                  <div class="card__price-wrapper">
+                    <span class="card__price">20400 <span>₽</span></span>
+                    <span class="card__shadow">20400</span>
+                  </div>
+                  <a class="card__button button button--dark" href="#">Купить абонемент</a>
+                </li>
+                <li class="card-list__item card">
+                  <h3 class="card__title">Полный день</h3>
+                  <p class="card__description">с 8:00 до 22:00 </p>
+                  <div class="card__price-wrapper">
+                    <span class="card__price">32400 <span>₽</span></span>
+                    <span class="card__shadow">32400</span>
+                  </div>
+                  <a class="card__button button button--dark" href="#">Купить абонемент</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
     <!-- пример использования спрайта
@@ -90,17 +196,17 @@
       <use href="/__spritemap#sprite-user"></use>
     </svg>  -->
     <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
-    <div data-test="price">price</div>
-    <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
-    <div data-test="features">features</div>
-    <div data-test="offers">offers</div>
-    <div data-test="faq">faq</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
+    <!--div data-test="hero">hero</!--div-->
+    <!--div data-test="about">about</!--div-->
+    <!--div data-test="price">price</!--div-->
+    <!--div data-test="games">games</!--div-->
+    <!--div data-test="juri">juri</!--div-->
+    <!--div data-test="features">features</!--div-->
+    <!--div data-test="offers">offers</!--div-->
+    <!--div data-test="faq">faq</!--div-->
+    <!--div data-test="reviews">reviews</!--div-->
+    <!--div data-test="form">form</!--div-->
+    <!--div data-test="footer">footer</!--div-->
     <script type="module" src="js/main.js"></script>
   </body>
 

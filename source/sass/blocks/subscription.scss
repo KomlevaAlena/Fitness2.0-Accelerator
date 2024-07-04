@@ -1,0 +1,26 @@
+.subscription {
+  position: relative;
+  z-index: 1;
+  overflow: unset;
+  padding: 125px 0 120px;
+  background-color: #f8f9fc;
+
+  &::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: -11%;
+    width: 289px;
+    height: 384px;
+
+    background-image: url("../img/weight-plates-desk.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 470px 494px;
+  }
+}
+
+.subscription__title {
+  margin-bottom: 25px;
+  text-align: center;
+}

@@ -2,11 +2,16 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+@import "vendor/data-tabs";
+@import "vendor/data-accordion";
+@import "vendor/swiper";
 
 // Global
 @import "mixins";
 @import "variables";
 @import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
 @import "global/container";
 
 // Blocks
@@ -16,3 +21,8 @@
 @import "blocks/main-header";
 @import "blocks/main-nav";
 @import "blocks/hero";
+@import "blocks/gym";
+@import "blocks/subscription";
+@import "blocks/filter-list.scss";
+@import "blocks/card-list";
+@import "blocks/card";

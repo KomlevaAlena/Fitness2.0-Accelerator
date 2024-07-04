@@ -1,0 +1,41 @@
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @include vp-1365 {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+.card-list__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 61px 20px 58px;
+  text-align: center;
+  background-color: $color-default-white;
+  border: 7px solid rgba(232, 232, 232, 0);
+}
+
+.card-list__item:hover,
+.card-list__item:focus-within {
+  padding: 61px 20px 58px;
+
+  border: 7px solid;
+  border-image: linear-gradient(97deg, rgba(237, 2, 51, 1) 17.6%, rgba(0, 62, 183, 1) 95.31%);
+  border-image-slice: 1;
+
+  .card__button {
+    color: $color-default-white;
+    background-color: $color-main;
+    background-image: $gradient;
+    box-shadow: none;
+  }
+}
