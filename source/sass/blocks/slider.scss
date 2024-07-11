@@ -6,7 +6,6 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,13 +13,10 @@
   height: 56px;
   margin: 0;
   padding: 0;
-
   color: $color-main;
-
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 50%;
-
   cursor: pointer;
   user-select: none;
 
@@ -31,15 +27,11 @@
 
   &::after {
     content: "";
-
     display: block;
     flex-shrink: 0;
     width: 22px;
     height: 34px;
-    // margin: 0 auto;
-
     background-color: currentColor;
-
     mask-image: url("../img/stack.svg#sprite_prev-arrow");
     mask-repeat: no-repeat;
     mask-size: 18px 34px;
@@ -77,6 +69,12 @@
       right: 0;
     }
   }
+
+  svg {
+    position: relative;
+    bottom: 0%;
+    left: 17%;
+  }
 }
 
 .swiper-button-prev {
@@ -90,14 +88,11 @@
     content: "";
     top: 20%;
     left: 30%;
-
     display: block;
     width: 18px;
     height: 34px;
     margin: 0 auto;
-
     background-color: rgba(16, 38, 84, 1);
-
     mask-image: url("../img/stack.svg#sprite_prev-arrow");
     mask-repeat: no-repeat;
     mask-size: 18px 34px;
@@ -125,7 +120,6 @@
   content: "";
   right: 30px;
   bottom: 240px;
-
   display: block;
 
   &::after {
@@ -133,7 +127,6 @@
     content: "";
     top: 20%;
     right: 27%;
-
     display: block;
     width: 18px;
     height: 34px;
