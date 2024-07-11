@@ -1,0 +1,43 @@
+.contacts {
+  padding: 59px 0 59px 121px;
+
+  @include vp-1365 {
+    padding: 20px;
+  }
+}
+
+.contacts__title {
+  margin-bottom: 41px;
+}
+
+.contacts__content {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 71px;
+  max-width: 437px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    background-color: #74819c;
+  }
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  &:nth-child(2n) {
+    padding-left: 36px;
+  }
+}

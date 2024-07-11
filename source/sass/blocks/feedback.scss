@@ -1,0 +1,13 @@
+.feedback {
+  background-image: linear-gradient(90deg, $color-main 50%, $color-default-white 50%);
+  border-top: 1px solid #74819c;
+}
+
+.feedback__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include vp-1365 {
+    display: block;
+  }
+}
