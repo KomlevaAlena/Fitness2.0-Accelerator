@@ -1,4 +1,6 @@
-import Swiper from '../vendor/swiper';
+import Swiper from 'swiper';
+import {Navigation, Pagination} from 'swiper/modules';
+import 'swiper/css';
 
 export const slider = new Swiper('.judges__wrapper', {
   direction: 'horizontal',
@@ -7,6 +9,7 @@ export const slider = new Swiper('.judges__wrapper', {
     nextEl: '.judges__button--prev',
     prevEl: '.judges__button--next',
   },
+  modules: [Navigation, Pagination],
   breakpoints: {
     320: {
       slidesPerView: 1,
@@ -34,15 +37,5 @@ export const slider2 = new Swiper('.reviews__wrapper', {
     nextEl: '.reviews__button--next',
     prevEl: '.reviews__button--prev',
   },
-  // breakpoints: {
-  //   320: {
-  //     slidesPerView: 1,
-  //   },
-  //   768: {
-  //     slidesPerView: 1,
-  //   },
-  //   1366: {
-  //     slidesPerView: 1,
-  //   },
-  // },
+  modules: [Navigation, Pagination],
 });
