@@ -45,8 +45,12 @@
 
   &:active {
     color: $color-default-white;
-
     background-color: $color-main;
+
+    svg {
+      fill: $color-default-white;
+      background-color: $color-main;
+    }
   }
 
   &:disabled {
