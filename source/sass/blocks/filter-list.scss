@@ -79,7 +79,7 @@
   .filter-list {
     flex-direction: row;
     justify-content: space-between;
-    width: 332px;
+    width: 333px;
     margin: 0 auto;
     margin-top: 35px;
     padding: 0;
@@ -91,7 +91,7 @@
   }
 
   .filter-list__link {
-    padding-bottom: 10px;
+    padding: 0 0 9px;
     font-size: 18px;
 
     &:first-of-type {

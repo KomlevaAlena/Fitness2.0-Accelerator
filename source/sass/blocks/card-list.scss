@@ -9,7 +9,8 @@
 
   @include vp-1365 {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 38px;
+    margin: 41px 0 5px;
   }
 }
 
@@ -17,11 +18,12 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 0 auto;
   padding: 61px 20px 58px;
   text-align: center;
   background-color: $color-default-white;
   border: 7px solid rgba(232, 232, 232, 0);
+  width: 440px;
 }
 
 .card-list__item:hover,
