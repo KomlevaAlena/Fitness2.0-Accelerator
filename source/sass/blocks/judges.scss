@@ -1,15 +1,35 @@
 .judges {
   padding: 60px 0 120px;
+
+  @include vp-1365 {
+    padding: 41px 0 100px;
+  }
 }
 
 .judges__title {
   margin-bottom: 45px;
+
+  @include vp-1365 {
+    margin: 0 auto 39px;
+    text-align: center;
+  }
 }
 
 .judges__slider {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 60px;
+
+  @include vp-1365 {
+    max-width: 686px;
+  }
+}
+
+.slider__button--prev {
+  left: -14px;
+}
+.slider__button--next {
+  right: -14px;
 }
 
 .judges__list {

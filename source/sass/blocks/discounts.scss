@@ -1,10 +1,18 @@
 .discounts {
   padding: 123px 0 120px;
+
+  @include vp-1365 {
+    padding: 101px 0 100px;
+  }
 }
 
 .discounts__title {
   margin-bottom: 70px;
   text-align: center;
+
+  @include vp-1365 {
+    margin-bottom: 39px
+  }
 }
 
 .discounts__list {
@@ -14,4 +22,8 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @include vp-1365 {
+    gap: 30px;
+  }
 }

@@ -71,6 +71,10 @@
   li + li {
     margin-top: 12px;
   }
+
+  @include vp-1365 {
+    padding: 5px 28px 26px 69px;
+  }
 }
 
 .judges-card__wrapper {
@@ -78,7 +82,6 @@
   z-index: 2;
   inset: 0;
   transform: translateX(-100%);
-
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr;
@@ -87,6 +90,11 @@
   padding: 46px 20px 21px;
   background-color: rgba(16, 38, 84, 0.89);
   transition: 1s;
+
+  @include vp-1365 {
+    padding: 54px 0px 21px;
+    gap: 1px;
+  }
 }
 
 .judges-card__name {
@@ -104,4 +112,8 @@
   line-height: 24px;
   color: #b6bdcc;
   text-align: center;
+
+  @include vp-1365 {
+    padding-bottom: 27px;
+  }
 }
