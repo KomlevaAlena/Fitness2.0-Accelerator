@@ -1,5 +1,11 @@
 .gym {
   padding: 116px 0 121px;
+
+  @include vp-1365 {
+    padding: 100px 0 121px;
+  }
+  @include vp-767 {
+  }
 }
 
 .gym__container {
@@ -12,7 +18,6 @@
     text-align: center;
   }
   @include vp-767 {
-    //padding: 0;
     text-align: left;
   }
 }
@@ -20,6 +25,13 @@
 .gym__media {
   position: relative;
   padding: 6px 0 115px 62px;
+
+  @include vp-1365 {
+    margin: 0 auto;
+    padding: 39px 0 83px 0px;
+  }
+  @include vp-767 {
+  }
 }
 
 .gym__title {
@@ -27,6 +39,7 @@
 
   @include vp-1365 {
     margin-bottom: -2px;
+    letter-spacing: 2px;
   }
   @include vp-767 {
     margin-bottom: 4px;
@@ -37,6 +50,16 @@
   margin: 0 0 93px;
   font-size: 22px;
   line-height: 22px;
+
+  @include vp-1365 {
+    margin: 22px 0 33px;
+    margin-left: -5px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: -0.1px;
+  }
+  @include vp-767 {
+  }
 }
 
 .gym__text {
@@ -48,6 +71,17 @@
 
   & + & {
     margin-top: 8px;
+  }
+
+  @include vp-1365 {
+    margin: 0 auto;
+    max-width: 507px;
+
+    &:last-of-type {
+      display: none;
+    }
+  }
+  @include vp-767 {
   }
 }
 
@@ -72,6 +106,7 @@
 
   @include vp-1365 {
     left: 50%;
+    top: 300px;
     transform: translateX(-50%);
     width: 39.3%;
   }
@@ -135,6 +170,11 @@
     height: 70px;
     padding: 2px;
     background-image: linear-gradient(81deg, #003d85 0%, #b80027 89%);
+
+    @include vp-1365 {
+      width: 52px;
+      height: 52px;
+    }
   }
 
   &::after {
