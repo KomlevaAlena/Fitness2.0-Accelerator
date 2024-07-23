@@ -13,6 +13,10 @@
     margin: 0 auto 39px;
     text-align: center;
   }
+
+  @include vp-767 {
+    margin: 0 auto 41px;
+  }
 }
 
 .judges__slider {
@@ -22,6 +26,11 @@
 
   @include vp-1365 {
     max-width: 686px;
+  }
+
+  @include vp-767 {
+    max-width: 290px;
+    padding: 0 32px;
   }
 }
 

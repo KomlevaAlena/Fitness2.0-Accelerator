@@ -58,6 +58,10 @@
   line-height: 22px;
   text-align: center;
   transition: 1s;
+
+  @include vp-767 {
+    padding: 25px 15px;
+  }
 }
 
 .judges-card__list {
@@ -74,6 +78,11 @@
 
   @include vp-1365 {
     padding: 5px 28px 26px 69px;
+  }
+
+  @include vp-767 {
+    line-height: 16px;
+    padding: 5px 25px 26px 69px;
   }
 }
 
@@ -115,5 +124,9 @@
 
   @include vp-1365 {
     padding-bottom: 27px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 5px;
   }
 }
