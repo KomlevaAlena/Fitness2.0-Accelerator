@@ -25,7 +25,12 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+
+  @include vp-1365 {
+    letter-spacing: -1px;
+  }
 }
+
 .accordion__content {
   width: 100%;
 }
@@ -43,6 +48,12 @@
 
   p + p {
     margin-top: 20px;
+  }
+
+  @include vp-1365 {
+    p {
+      max-width: 560px;
+    }
   }
 }
 
@@ -99,6 +110,10 @@
 
 .accordion__element.is-active .accordion__button-wrapper {
   padding-bottom: 4px;
+
+  @include vp-1365 {
+    padding-bottom: 0;
+  }
 }
 
 .accordion__element.is-active .accordion__button {
