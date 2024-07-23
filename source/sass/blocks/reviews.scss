@@ -15,6 +15,10 @@
 
 .reviews__wrapper {
   padding: 40px;
+
+  @include vp-1365 {
+    max-width: 580px;
+  }
 }
 
 .reviews__list {
