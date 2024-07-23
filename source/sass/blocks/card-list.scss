@@ -12,6 +12,11 @@
     gap: 38px;
     margin: 41px 0 5px;
   }
+
+  @include vp-767 {
+    gap: 35px;
+    margin: 34px 0 5px;
+  }
 }
 
 .card-list__item {
@@ -24,6 +29,11 @@
   background-color: $color-default-white;
   border: 7px solid rgba(232, 232, 232, 0);
   width: 440px;
+
+  @include vp-767 {
+    width: 100%;
+    padding: 42px 20px 43px;
+  }
 }
 
 .card-list__item:hover,
@@ -39,5 +49,9 @@
     background-color: $color-main;
     background-image: $gradient;
     box-shadow: none;
+  }
+
+  @include vp-767 {
+    padding: 42px 20px 43px;
   }
 }
