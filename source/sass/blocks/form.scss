@@ -43,6 +43,11 @@
       color: rgba($color-default-white, 0.4);
     }
   }
+
+  @include vp-1365 {
+    padding: 8px 0 4px;
+    font-size: 16px;
+  }
 }
 
 .form__group.is-invalid input {

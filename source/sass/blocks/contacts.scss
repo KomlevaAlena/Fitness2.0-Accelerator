@@ -2,12 +2,16 @@
   padding: 59px 0 59px 121px;
 
   @include vp-1365 {
-    padding: 20px;
+    padding: 183px 87px 98px;
   }
 }
 
 .contacts__title {
   margin-bottom: 41px;
+
+  @include vp-1365 {
+    letter-spacing: 2.8px;
+  }
 }
 
 .contacts__content {
@@ -30,6 +34,15 @@
     width: 1px;
     background-color: #74819c;
   }
+
+  @include vp-1365 {
+    column-gap: 90px;
+
+    &::before {
+      left: 58%;
+      height: 137px;
+    }
+  }
 }
 
 .contacts__list {
@@ -39,5 +52,13 @@
 
   &:nth-child(2n) {
     padding-left: 36px;
+  }
+
+  @include vp-1365 {
+    max-width: 218px;
+
+    &:nth-child(2n) {
+      padding-left: 48px;
+    }
   }
 }

@@ -4,7 +4,7 @@
   background-color: $color-main;
 
   @include vp-1365 {
-    padding: 20px;
+    padding: 100px 87px 20px;
   }
 }
 
@@ -14,6 +14,12 @@
 
 .free__title {
   margin-bottom: 25px;
+
+  @include vp-1365 {
+    font-size: 40px;
+    letter-spacing: 2.4px;
+    margin-bottom: 27px;
+  }
 }
 
 .free__wrapper {
@@ -24,6 +30,10 @@
     gap: 35px 27px;
     color: $color-default-white;
     background-color: $color-main;
+
+    @include vp-1365 {
+      gap: 29px 60px;
+    }
   }
 }
 

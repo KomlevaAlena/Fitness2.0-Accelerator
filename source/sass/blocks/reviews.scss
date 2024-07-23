@@ -1,5 +1,9 @@
 .reviews {
-  padding: 101px 0 81px;
+  padding: 120px 0 81px;
+
+  @include vp-1365 {
+    padding: 101px 0 99px;
+  }
 }
 
 .reviews__title {
