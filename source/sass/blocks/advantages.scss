@@ -5,6 +5,10 @@
   @include vp-1365 {
     padding: 102px 0 99px;
   }
+
+  @include vp-767 {
+    padding: 71px 0 99px;
+  }
 }
 
 .advantages__title {
@@ -13,6 +17,10 @@
 
   @include vp-1365 {
     margin-bottom: 20px;
+  }
+
+  @include vp-767 {
+    letter-spacing: 1.26px;
   }
 }
 
@@ -34,7 +42,7 @@
 
   @include vp-767 {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 27px;
   }
 }
 
@@ -48,6 +56,20 @@
 
   &:nth-child(2n) {
     grid-column: 1/2;
+
+    @include vp-767 {
+      .advantages__content {
+        width: 162px;
+      }
+    }
+  }
+
+  &:nth-child(2n + 1) {
+    @include vp-767 {
+      .advantages__content {
+        width: 204px;
+      }
+    }
   }
 
   &:nth-last-child(-n + 2) {
@@ -59,11 +81,22 @@
     padding-bottom: 0;
     border-bottom: 2px solid transparent;
   }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .advantages__number {
   display: flex;
   flex-direction: column;
+
+  @include vp-767 {
+    text-align: center;
+  }
 }
 
 .advantages__number span {
@@ -81,6 +114,12 @@
     background-clip: text;
 
     -webkit-background-clip: text;
+
+    @include vp-767 {
+      font-size: 64px;
+      line-height:68px;
+      margin: 3px 0 0;
+    }
   }
 }
 
@@ -92,6 +131,11 @@
   @include vp-1365 {
     gap: 10px;
   }
+
+  @include vp-767 {
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 .advantages__title-card {
@@ -101,6 +145,11 @@
 
   @include vp-1365 {
     font-size: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 18px;
   }
 }
 
@@ -113,6 +162,12 @@
 
   @include vp-1365 {
     line-height: 26px;
+  }
+
+  @include vp-767 {
+    margin: 6px auto 0;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -133,7 +188,7 @@
 
     &:first-child {
       font-size: 68px;
-      line-height: 68px;;
+      line-height: 68px;
       letter-spacing: 1.5px;
       background: none;
     }
@@ -167,6 +222,24 @@
       margin: 0 auto;
       width: 210px;
       line-height: 24px;
+    }
+  }
+
+  @include vp-767 {
+    width: 290px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+
+    .advantages__number span {
+      &:first-child {
+        font-size: 64px;
+      line-height: 70px;
+      }
+    }
+
+    .advantages__unit {
+      padding-top: 1px;
+      font-size: 22px;
     }
   }
 }
