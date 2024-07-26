@@ -1,6 +1,4 @@
 .reviews-card {
-  display: grid;
-  grid-template-columns: auto 1fr;
   gap: 10px 30px;
   padding: 61px 60px 43px 60px;
   color: $color-default-white;
@@ -12,6 +10,8 @@
   &.is-visible {
     visibility: visible;
     opacity: 1;
+    display: grid;
+    grid-template-columns: repeat(80px, 1fr);
   }
 }
 
@@ -20,11 +20,18 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  grid-column: 1/2;
+  grid-row: 1/3;
 
   @include vp-767 {
     width: 68px;
     height: 68px;
   }
+}
+
+.reviews-card__content {
+  grid-column: 2/3;
+  grid-row: 1/3;
 }
 
 .reviews-card__title {

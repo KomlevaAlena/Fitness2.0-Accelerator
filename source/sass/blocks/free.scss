@@ -17,6 +17,7 @@
 }
 
 .free__title {
+  letter-spacing: 2.9px;
   margin-bottom: 25px;
 
   @include vp-1365 {
@@ -37,7 +38,7 @@
   form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 35px 27px;
+    gap: 37px 27px;
     color: $color-default-white;
     background-color: $color-main;
 

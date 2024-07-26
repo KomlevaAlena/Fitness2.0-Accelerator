@@ -1,5 +1,5 @@
 .reviews {
-  padding: 120px 0 81px;
+  padding: 120px 0 66px;
 
   @include vp-1365 {
     padding: 101px 0 99px;
@@ -23,10 +23,22 @@
   max-width: 680px;
   margin: 0 auto;
   padding: 0 20px;
+
+  .slider__button--prev {
+    left: -13px;
+    top: 41%;
+  }
+
+  .slider__button--next {
+    right: -14px;
+    top: 41%;
+  }
 }
 
 .reviews__wrapper {
   padding: 40px;
+  max-width: 560px;
+
 
   @include vp-1365 {
     max-width: 580px;
