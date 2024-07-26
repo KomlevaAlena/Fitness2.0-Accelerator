@@ -1,5 +1,5 @@
 .gym {
-  padding: 116px 0 121px;
+  padding: 114px 0 121px;
 
   @include vp-1365 {
     padding: 100px 0 76px;
@@ -45,6 +45,8 @@
 
 .gym__title {
   margin-bottom: 31px;
+  font-size: 52px;
+  letter-spacing: 3.2px;
 
   @include vp-1365 {
     margin-bottom: -2px;
