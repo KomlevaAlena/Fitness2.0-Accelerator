@@ -6,6 +6,10 @@
   @include vp-1365 {
     padding: 100px 87px 20px;
   }
+
+  @include vp-767 {
+    padding: 70px 0 20px;
+  }
 }
 
 [data-lastpass-icon-root] {
@@ -19,6 +23,12 @@
     font-size: 40px;
     letter-spacing: 2.4px;
     margin-bottom: 27px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    letter-spacing: 1.25px;
+    margin-bottom: 30px;
   }
 }
 
@@ -34,11 +44,21 @@
     @include vp-1365 {
       gap: 29px 60px;
     }
+
+    @include vp-767 {
+      gap: 0 60px;
+    }
   }
 }
 
 .free__button {
   grid-column: 1 / -1;
   max-width: none;
+
+  @include vp-767 {
+    margin-top: 16px;
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
 }
 
