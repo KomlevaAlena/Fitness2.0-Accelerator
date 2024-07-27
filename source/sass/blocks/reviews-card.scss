@@ -113,12 +113,15 @@
     width: 226px;
     margin: 0 auto;
     padding: 30px 25px 29px;
+    row-gap: 0;
     text-align: center;
 
     .reviews-card__content {
       width: 176px;
       margin: 0;
       padding: 0;
+      grid-column: 1/3;
+      grid-row: 2/3;
     }
 
     .reviews-card__title {
