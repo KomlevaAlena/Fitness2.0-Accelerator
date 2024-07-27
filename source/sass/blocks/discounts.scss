@@ -15,7 +15,8 @@
   text-align: center;
 
   @include vp-1365 {
-    margin-bottom: 39px
+    margin-bottom: 39px;
+    letter-spacing: 1.65px;
   }
 
   @include vp-767 {

@@ -2,7 +2,7 @@
   padding: 60px 0 120px;
 
   @include vp-1365 {
-    padding: 41px 0 100px;
+    padding: 42px 0 100px;
   }
 
   @include vp-767 {
@@ -17,6 +17,7 @@
   @include vp-1365 {
     margin: 0 auto 39px;
     text-align: center;
+    letter-spacing: 1.55px;
   }
 
   @include vp-767 {
@@ -47,6 +48,10 @@
     bottom: 19%;
     left: 28%;
   }
+
+  @include vp-1365 {
+    left: -13px;
+  }
 }
 .slider__button--next {
   right: -14px;
@@ -56,6 +61,10 @@
     position: absolute;
     bottom: 19%;
     left: 28%;
+  }
+
+  @include vp-1365 {
+    right: -13px;
   }
 }
 

@@ -21,7 +21,11 @@
         <div class="container">
           <nav class="main-nav">
             <a class="main-nav__logo-link" href="index.html" aria-current="page">
-              <img src="/__spritemap#sprite-nav-logo" width="119" height="20" alt="Supergym">
+              <!--img src="/__spritemap#sprite-nav-logo" width="119" height="20" alt="Supergym"-->
+              <span class="visually-hidden">Supergym</span>
+              <svg role="img"  viewBox="0 0 119 20" width="119" height="20" focusable="false">
+                <use xlink:href="/__spritemap#sprite-nav-logo"></use>
+              </svg>
             </a>
             <div class="main-nav__content">
               <a class="main-nav__tel" href="tel:88005555555">8-800-555-55-55</a>
@@ -845,6 +849,7 @@
       <footer class="footer">
         <div class="container footer__container">
           <a class="footer__logo" href="index.html" aria-current="page">
+            <span class="visually-hidden">Supergym</span>
             <svg role="img"  viewBox="0 0 106 19" width="106" height="19" focusable="false">
               <use xlink:href="/__spritemap#sprite-supergym-footer-desk"></use>
             </svg>

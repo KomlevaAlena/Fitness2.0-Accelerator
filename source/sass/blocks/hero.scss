@@ -4,7 +4,7 @@
   margin: 0 auto;
 
   @include vp-1365 {
-    padding-bottom: 99px;
+    padding-bottom: 100px;
   }
   @include vp-767 {
     padding-bottom: 70px;
@@ -34,7 +34,7 @@
 
   @include vp-1365 {
     gap: 8px 15px;
-    padding-top: 32px;
+    padding-top: 33px;
   }
   @include vp-767 {
     gap: 14px 0;
@@ -56,9 +56,9 @@
 
   @include vp-1365 {
     margin-right: 0;
-    font-size: 42px;
+    font-size: 40px;
     line-height: 42px;
-    letter-spacing: 1.02px;
+    letter-spacing: 2.25px;
   }
   @include vp-767 {
     margin-right: 0;
@@ -79,9 +79,9 @@
   letter-spacing: 7.95px;
 
   @include vp-1365 {
-    font-size: 72px;
-    line-height: 85px;
-    letter-spacing: 0.65px;
+    font-size: 68px;
+    line-height: 86px;
+    letter-spacing: 2.45px;
   }
   @include vp-767 {
     font-size: 58px;
@@ -129,7 +129,7 @@
 
   @include vp-1365 {
     width: 186px;
-    margin: 43px 0 0 auto;
+    margin: 40px 0 0 auto;
   }
   @include vp-767 {
     width: 100%;
