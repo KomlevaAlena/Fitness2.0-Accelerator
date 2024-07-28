@@ -12,13 +12,10 @@
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.6px;
-
   background-color: transparent;
   border: none;
   box-shadow: 0 0 0 2px $color-default-white inset;
-
   transition: opacity $trans-default;
-
   cursor: pointer;
   user-select: none;
 
@@ -30,7 +27,6 @@
   &:focus,
   &:focus-visible {
     color: $color-main-lignt;
-
     background-color: $color-default-white;
     outline: none;
   }
@@ -46,13 +42,11 @@
   &:disabled,
   &--disabled {
     opacity: 0.5;
-
     pointer-events: none;
   }
 
   &--dark {
     color: $color-main;
-
     background-color: $color-default-white;
     box-shadow: 0 0 0 2px $color-main inset;
 
@@ -60,7 +54,6 @@
     &:focus,
     &:focus-visible {
       color: $color-default-white;
-
       background-color: $color-main;
       background-image: $gradient;
       box-shadow: none;
@@ -70,8 +63,7 @@
       color: rgba($color-default-white, 0.7);
     }
 
-    &:disabled,
-    &--disabled {
+    &:disabled {
       opacity: 0.3;
     }
   }

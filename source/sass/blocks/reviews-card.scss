@@ -6,13 +6,14 @@
   opacity: 0;
   background-color: $color-main-light2;
   box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
+}
 
-  &.is-visible {
-    visibility: visible;
-    opacity: 1;
-    display: grid;
-    grid-template-columns: repeat(80px, 1fr);
-  }
+.reviews-card.is-visible {
+  visibility: visible;
+  opacity: 1;
+  display: grid;
+
+  // grid-template-columns: repeat(80px, 1fr);
 }
 
 .reviews-card img {
@@ -55,7 +56,7 @@
     padding: 60px 65px 45px;
   }
 
-  .reviews-card + swiper-slide {
+  .reviews-card.swiper-slide {
     display: grid;
     grid-template-columns: auto/auto 1fr;
   }

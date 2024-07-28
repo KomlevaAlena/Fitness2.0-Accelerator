@@ -123,6 +123,7 @@
   background-color: $color-default-white;
   border: 1px solid currentColor;
   border-radius: 50%;
+  cursor: pointer;
 
   &::before {
     position: absolute;
@@ -161,6 +162,7 @@
   &:disabled {
     opacity: 0.3;
     pointer-events: none;
+    cursor: default;
   }
 
   @include vp-767 {
