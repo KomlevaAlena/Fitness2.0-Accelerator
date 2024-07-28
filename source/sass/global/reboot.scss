@@ -20,7 +20,6 @@ html {
   -moz-osx-font-smoothing: grayscale;
   line-height: $lh-default;
   color: $color-main;
-  // оптимизация выравнивания шрифта относительно центра строки
   text-rendering: optimizeLegibility;
 }
 
@@ -53,7 +52,6 @@ input:-webkit-autofill {
   box-shadow: inset 0 0 0 1000px $color-default-white;
 }
 
-// firefox placeholder \ invalid fix + ios bdrs
 input,
 textarea {
   border-radius: 0;
@@ -71,7 +69,6 @@ select {
   border-radius: 0;
 }
 
-// ie11 X removal
 input {
   &::-ms-clear,
   &::-ms-reveal {
@@ -79,7 +76,6 @@ input {
   }
 }
 
-// chrome search X removal
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
@@ -87,7 +83,6 @@ input[type="search"]::-webkit-search-results-decoration {
   appearance: none;
 }
 
-// input[number] arrows removal
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   margin: 0;
@@ -99,7 +94,6 @@ input[type="number"] {
   appearance: textfield;
 }
 
-// ios button \ inputs reset
 select,
 textarea,
 input:matches([type="email"],

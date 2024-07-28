@@ -11,8 +11,6 @@ const initVideo = () => {
     evt.preventDefault();
     player.classList.add('is-show');
     new YT.Player(player, {
-      // height: '285',
-      // width: '544',
       videoId: '9TZXsZItgdw',
       events: {
         onReady: (e) => e.target.playVideo()
