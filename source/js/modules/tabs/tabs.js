@@ -150,7 +150,7 @@ export class Tabs {
   _createDOMElement(elementType, attributes) {
     const element = document.createElement(elementType);
     for (const key in attributes) {
-      if (attributes.hasOwnProperty(key)) {
+      if (Object.prototype.hasOwnProperty.call(attributes, key)) {
         element.setAttribute(key, attributes[key]);
       }
     }

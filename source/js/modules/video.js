@@ -16,6 +16,7 @@ const initVideo = () => {
         onReady: (e) => e.target.playVideo()
       }
     });
+
     evt.stopPropagation();
   });
 };

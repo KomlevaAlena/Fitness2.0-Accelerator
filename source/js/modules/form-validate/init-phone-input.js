@@ -21,16 +21,16 @@ const onPhoneInputInput = (e) => {
   });
 };
 
-const onPhoneInputFocus = ({target}) => {
-  if (!target.value) {
-    target.value = baseCountryCode;
-  }
-  target.addEventListener('input', onPhoneInputInput);
-  target.addEventListener('blur', onPhoneInputBlur);
-  target.addEventListener('keydown', onPhoneInputKeydown);
-  target.addEventListener('paste', onPhoneInputPaste);
-  target.addEventListener('click', onPhoneInputClick);
-};
+// const onPhoneInputFocus = ({target}) => {
+//   if (!target.value) {
+//     target.value = baseCountryCode;
+//   }
+//   target.addEventListener('input', onPhoneInputInput);
+//   target.addEventListener('blur', onPhoneInputBlur);
+//   target.addEventListener('keydown', onPhoneInputKeydown);
+//   target.addEventListener('paste', onPhoneInputPaste);
+//   target.addEventListener('click', onPhoneInputClick);
+// };
 
 const onPhoneInputClick = (e) => {
   if (e.target.selectionStart < 4) {
@@ -81,6 +81,17 @@ const onPhoneInputBlur = ({target}) => {
     target.removeEventListener('paste', onPhoneInputPaste);
     target.removeEventListener('click', onPhoneInputClick);
   }
+};
+
+const onPhoneInputFocus = ({target}) => {
+  if (!target.value) {
+    target.value = baseCountryCode;
+  }
+  target.addEventListener('input', onPhoneInputInput);
+  target.addEventListener('blur', onPhoneInputBlur);
+  target.addEventListener('keydown', onPhoneInputKeydown);
+  target.addEventListener('paste', onPhoneInputPaste);
+  target.addEventListener('click', onPhoneInputClick);
 };
 
 export const initPhoneInput = (parent) => {
